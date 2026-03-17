@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "Get photos for fault 1",
+      "method": "GET",
+      "path": "/1",
+      "expectedStatus": 200,
+      "expectedBody": {"photos": []},
+      "bodyMatcher": "partial"
+    }
+  ]
+}

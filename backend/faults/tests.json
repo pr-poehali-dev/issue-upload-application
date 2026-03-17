@@ -1,0 +1,27 @@
+{
+  "tests": [
+    {
+      "name": "Get faults list",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {"faults": [], "total": 0},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get stats",
+      "method": "GET",
+      "path": "/stats",
+      "expectedStatus": 200,
+      "expectedBody": {"totals": {}},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Export CSV",
+      "method": "GET",
+      "path": "/export",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    }
+  ]
+}
